@@ -8,15 +8,16 @@ export function App() {
   const [isEditing, setIsEditing] = useState(false);
   const [editID, setEditID] = useState(null);
   const [alert, setAlert] = useState({
-    show: true,
-    msg: "hello world",
-    type: "success",
+    show: false,
+    msg: "",
+    type: "",
   });
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!name) {
       // display alert
+      showAlert(true, "danger", "plese enter value");
     } else if (name && isEditing) {
       // deal with edit
     } else {
@@ -25,6 +26,10 @@ export function App() {
       setList([...list, newItem]);
       setName("");
     }
+  };
+
+  const showAlert = (show = false, type = "", msg = "") => {
+    setAlert({ show, type, msg });
   };
 
   return (
