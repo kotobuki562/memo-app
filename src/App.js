@@ -17,11 +17,11 @@ export function App() {
     e.preventDefault();
     if (!name) {
       // display alert
-      showAlert(true, "danger", "plese enter value");
+      showAlert(true, "danger", "文字入力してください！");
     } else if (name && isEditing) {
       // deal with edit
     } else {
-      // show alert
+      showAlert(true, "success", "メモリストを追加しました！");
       const newItem = { id: new Date().getTime().toString(), title: name };
       setList([...list, newItem]);
       setName("");
@@ -30,6 +30,16 @@ export function App() {
 
   const showAlert = (show = false, type = "", msg = "") => {
     setAlert({ show, type, msg });
+  };
+
+  const clearList = () => {
+    showAlert(true, "danger", "メモを全て削除しました！");
+    setList([]);
+  };
+
+  const removeItem = (id) => {
+    showAlert(true, "danger", "item remove");
+    setList(list.filter((item) => item.id !== id));
   };
 
   return (
@@ -52,8 +62,10 @@ export function App() {
       </form>
       {list.length > 0 && (
         <div className="grocery-container">
-          <List items={list} />
-          <button className="clear-btn">clear items</button>
+          <List items={list} removeItem={removeItem} />
+          <button className="clear-btn" onClick={clearList}>
+            clear items
+          </button>
         </div>
       )}
     </section>
