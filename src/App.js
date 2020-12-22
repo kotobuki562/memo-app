@@ -49,7 +49,7 @@ export function App() {
   };
 
   const removeItem = (id) => {
-    showAlert(true, "danger", "item remove");
+    showAlert(true, "danger", "メモを削除しました！");
     setList(list.filter((item) => item.id !== id));
   };
 
@@ -64,12 +64,12 @@ export function App() {
     <section className="section-center">
       <form className="grocery-form" onSubmit={handleSubmit}>
         {alert.show && <Alert {...alert} removeAlert={showAlert} list={list} />}
-        <h3>grocery bad</h3>
+        <h3>注文リスト</h3>
         <div className="form-control">
           <input
             type="text"
             className="grocery"
-            placeholder="e.g. eggs"
+            placeholder="ここに注文を入力してください！ ししとう"
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
