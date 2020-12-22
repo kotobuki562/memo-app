@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/kotobuki562/memo-app/static/css/main.f91088b8.chunk.css",
-    "main.js": "/kotobuki562/memo-app/static/js/main.df4d97d2.chunk.js",
-    "main.js.map": "/kotobuki562/memo-app/static/js/main.df4d97d2.chunk.js.map",
-    "runtime-main.js": "/kotobuki562/memo-app/static/js/runtime-main.3aca8693.js",
-    "runtime-main.js.map": "/kotobuki562/memo-app/static/js/runtime-main.3aca8693.js.map",
-    "static/js/2.2ad1e011.chunk.js": "/kotobuki562/memo-app/static/js/2.2ad1e011.chunk.js",
-    "static/js/2.2ad1e011.chunk.js.map": "/kotobuki562/memo-app/static/js/2.2ad1e011.chunk.js.map",
-    "index.html": "/kotobuki562/memo-app/index.html",
-    "static/css/main.f91088b8.chunk.css.map": "/kotobuki562/memo-app/static/css/main.f91088b8.chunk.css.map",
-    "static/js/2.2ad1e011.chunk.js.LICENSE.txt": "/kotobuki562/memo-app/static/js/2.2ad1e011.chunk.js.LICENSE.txt"
+    "main.css": "/memo-app/static/css/main.f91088b8.chunk.css",
+    "main.js": "/memo-app/static/js/main.df4d97d2.chunk.js",
+    "main.js.map": "/memo-app/static/js/main.df4d97d2.chunk.js.map",
+    "runtime-main.js": "/memo-app/static/js/runtime-main.0481cbe2.js",
+    "runtime-main.js.map": "/memo-app/static/js/runtime-main.0481cbe2.js.map",
+    "static/js/2.2ad1e011.chunk.js": "/memo-app/static/js/2.2ad1e011.chunk.js",
+    "static/js/2.2ad1e011.chunk.js.map": "/memo-app/static/js/2.2ad1e011.chunk.js.map",
+    "index.html": "/memo-app/index.html",
+    "static/css/main.f91088b8.chunk.css.map": "/memo-app/static/css/main.f91088b8.chunk.css.map",
+    "static/js/2.2ad1e011.chunk.js.LICENSE.txt": "/memo-app/static/js/2.2ad1e011.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.3aca8693.js",
+    "static/js/runtime-main.0481cbe2.js",
     "static/js/2.2ad1e011.chunk.js",
     "static/css/main.f91088b8.chunk.css",
     "static/js/main.df4d97d2.chunk.js"
