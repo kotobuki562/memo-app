@@ -20,7 +20,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://github.com/kotobuki562/memo-app/",
+  "homepage": "https://kotobuki562.github.io/memo-app/",
   "eslintConfig": {
     "extends": [
       "react-app",
