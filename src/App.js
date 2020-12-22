@@ -20,6 +20,17 @@ export function App() {
       showAlert(true, "danger", "文字入力してください！");
     } else if (name && isEditing) {
       // deal with edit
+      setList(
+        list.map((item) => {
+          if (item.id === editID) {
+            return { ...item, title: name };
+          }
+        })
+      );
+      setName("");
+      setEditID(null);
+      setIsEditing(false);
+      showAlert(true, "success", "メモを編集しました！");
     } else {
       showAlert(true, "success", "メモリストを追加しました！");
       const newItem = { id: new Date().getTime().toString(), title: name };
