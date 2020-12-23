@@ -14,14 +14,14 @@ const List = ({ items, removeItem, editItem }) => {
                 className="edit-btn"
                 onClick={() => editItem(id)}
               >
-                <FaEdit />
+                <FaEdit size={20} />
               </button>
               <button
                 type="button"
                 className="delete-btn"
                 onClick={() => removeItem(id)}
               >
-                <FaTrash />
+                <FaTrash size={20} />
               </button>
             </div>
           </article>
